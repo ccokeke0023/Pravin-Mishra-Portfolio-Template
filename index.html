@@ -602,14 +602,16 @@
       <div class="footer-bottom">
         <p>© <span id="year"></span> Pravin Mishra. All rights reserved.</p>
         <p>Crafted with <span>cloud</span> excellence by Pravin Mishra</p>
-        <p>Pravin Mishra Portfolio v1.0 — Deployed on 05 Feb 2026 — By Okeke Christian Chima</p>
-          <script>
+        <p>
+            Pravin Mishra Portfolio v1.0 — Deployed on
+            <span id="deployDate"></span>
+            — By Okeke Christian Chima
+        </p>
+            <script>
               const d = new Date();
-              const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-              const formattedDate = `${d.getDate().toString().padStart(2,'0')} ${months[d.getMonth()]} ${d.getFullYear()}`;
+              const formattedDate = d.toISOString().split('T')[0];
               document.getElementById("deployDate").textContent = formattedDate;
-          </script>
-
+            </script>
       </div>
 
     </div>
