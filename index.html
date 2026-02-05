@@ -604,6 +604,14 @@
         <p>Crafted with <span>cloud</span> excellence by Pravin Mishra</p>
         <p>
           Pravin Mishra Portfolio v1.0 — Deployed on 05 Feb 2026 — By Okeke Christian Chima</p>
+          <p>Today is: <span id="date"></span></p>
+          <script>
+              const d = new Date();
+              const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+              const formattedDate = `${d.getDate().toString().padStart(2,'0')} ${months[d.getMonth()]} ${d.getFullYear()}`;
+              document.getElementById("deployDate").textContent = formattedDate;
+          </script>
+
       </div>
 
     </div>
